@@ -76,7 +76,8 @@ global.discordClient = new Discord.Client();
 client.registry
 	.registerDefaultTypes()
 	.registerGroups([
-		['general', 'general commands']
+		['general', 'general commands'],
+		['admin', 'administration commands']
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands()
