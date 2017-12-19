@@ -1,8 +1,10 @@
 {
     "discordtoken": "MzkyMTAwNzA4MjU5OTg3NDU2.DRi3_w.dNBd3ompbVJ_msnvhceh8DVVE68",
+    "testdiscordtoken": "MzkyNTY2MzY5MTk3MjI4MDQy.DRsl5g.AmNBZmt84CXEkWnUe_mPsQicm6E",
     "googletoken": "google api key here",
     "apiaitoken": "tokenhere",
-    "botsudo": "owneridhere",
+    "botsudo": "193066810470301696",
     "mysql": "uEgwrOugbAG0Nbb1",
-    "mysqlip": "35.196.94.58 "
+    "mysqlip": "35.196.94.58",
+    "isdev": "false"
 }

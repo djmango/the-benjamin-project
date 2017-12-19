@@ -9,12 +9,7 @@ module.exports = class SayCommand extends Command {
 			group: 'admin',
 			memberName: 'op',
 			description: 'Adds designated user to the admin list.',
-			examples: ['op @djmango'],
-			args: [{
-				key: 'text',
-				prompt: 'Who would you like to add to the admin list?',
-				type: 'string'
-			}]
+			examples: ['op @djmango']
 		});
 	}
 	run(msg, args) {
