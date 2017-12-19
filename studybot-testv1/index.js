@@ -1,6 +1,6 @@
 //apis
 console.log("getting apis...");
-global.Commando = require('discord.js-commando');
+global.Commando = require('discord.js-commando'); //butts
 global.Discord = require('discord.js');
 global.path = require('path');
 global.fs = require('fs');
