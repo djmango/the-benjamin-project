@@ -9,18 +9,10 @@ module.exports = class SayCommand extends Command {
 			group: 'admin',
 			memberName: 'deop',
 			description: 'Removes designated user from the admin list.',
-			examples: ['deop @djmango'],
-			args: [{
-				key: 'text',
-				prompt: 'Who would you like to remove from the admin list?',
-				type: 'string'
-			}]
+			examples: ['deop @djmango']
 		});
 	}
-	async run(msg, args) {
-		const {
-			text
-		} = args;
+	async run(msg) {
 		let mentions = msg.mentions.users.array()[0];
 		if (!mentions) return msg.reply('you must mention someone and not add any extra arguments!');
 		mysqlConnection.query(`select * from op where userId=${msg.author.id}`, function (error, results, fields) {

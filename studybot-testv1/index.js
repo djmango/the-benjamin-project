@@ -13,13 +13,14 @@ global.startTime = process.hrtime();
 const keys = JSON.parse(fs.readFileSync('./keys/keys.json')); //read all keys
 //keys
 console.log("pulling keys...");
-global.token = keys.discordtoken; //discord api key
+if (keys.isdev == "true") global.token = keys.testdiscordtoken; //test discord api key
+else global.token = keys.discordtoken; //discord api key
 global.apiai = ai(keys.apiaitoken); //api.ai api key
 global.yt_api_key = keys.youtubetoken; //youtube api key
 global.botsudoid = keys.botsudo; //bot sudo id
 //debug setup
-global.prefix = "sb!"
-
+if (keys.isdev == "true") global.prefix = "sb!!"
+else global.prefix = "sb!"
 //vars
 //prob nothing here for a while, everything is locally defined
 
