@@ -18,8 +18,7 @@ global.apiai = ai(keys.apiaitoken); //api.ai api key
 global.yt_api_key = keys.youtubetoken; //youtube api key
 global.botsudoid = keys.botsudo; //bot sudo id
 //debug setup
-if (keys.dev == "true") global.prefix = "m!!"
-else global.prefix = "m!"
+global.prefix = "sb!"
 
 //vars
 //prob nothing here for a while, everything is locally defined
