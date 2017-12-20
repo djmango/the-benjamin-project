@@ -8,7 +8,7 @@ module.exports = class SayCommand extends Command {
 			name: 'listservers',
 			group: 'general',
 			memberName: 'listservers',
-			description: 'Lists all servers that mango bot is currently in.',
+			description: 'Lists all servers that I am currently in.',
 			examples: ['listservers']
 		});
 	}

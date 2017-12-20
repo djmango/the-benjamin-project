@@ -1,0 +1,1189 @@
+Date time: Wed Dec 20 2017 11:20:51 GMT-0500 (Eastern Standard Time)
+-----------------------
+execPath: C:\Program Files\nodejs\node.exe
+-----------------------
+argv: C:\Program Files\nodejs\node.exe, C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\index.js
+-----------------------
+current directory: C:\Users\modit\Documents\GitHub\studybot\studybot-testv1
+-----------------------
+env:
+{ ALLUSERSPROFILE: 'C:\\ProgramData',
+  APPDATA: 'C:\\Users\\modit\\AppData\\Roaming',
+  CommonProgramFiles: 'C:\\Program Files\\Common Files',
+  'CommonProgramFiles(x86)': 'C:\\Program Files (x86)\\Common Files',
+  CommonProgramW6432: 'C:\\Program Files\\Common Files',
+  COMPUTERNAME: 'SKGHORI-WS',
+  ComSpec: 'C:\\WINDOWS\\system32\\cmd.exe',
+  DOCKER_TOOLBOX_INSTALL_PATH: 'C:\\Program Files\\Docker Toolbox',
+  ETHEREUM_SOCKET: '\\\\.\\pipe\\geth.ipc',
+  FPS_BROWSER_APP_PROFILE_STRING: 'Internet Explorer',
+  FPS_BROWSER_USER_PROFILE_STRING: 'Default',
+  GOROOT: 'C:\\Go\\',
+  HOMEDRIVE: 'C:',
+  HOMEPATH: '\\Users\\modit',
+  INTEL_DEV_REDIST: 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\',
+  LOCALAPPDATA: 'C:\\Users\\modit\\AppData\\Local',
+  LOGONSERVER: '\\\\SKGHORI-WS',
+  MIC_LD_LIBRARY_PATH: 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\mic',
+  NUMBER_OF_PROCESSORS: '8',
+  OneDrive: 'C:\\Users\\modit\\OneDrive',
+  OS: 'Windows_NT',
+  Path: 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\Program Files\\PuTTY\\;C:\\Go\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files\\Docker Toolbox;C:\\OpenSSL;C:\\Program Files (x86)\\HyperG;C:\\Program Files\\Geth;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\PROS\\llvm\\bin\\;C:\\Program Files\\PROS\\cli;C:\\Users\\modit\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\modit\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\modit\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\modit\\AppData\\Local\\atom\\bin;C:\\Users\\modit\\AppData\\Roaming\\npm;C:\\Program Files\\Docker Toolbox;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\modit\\AppData\\Local\\GitHubDesktop\\bin',
+  PATHEXT: '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL',
+  PROCESSOR_ARCHITECTURE: 'AMD64',
+  PROCESSOR_IDENTIFIER: 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel',
+  PROCESSOR_LEVEL: '6',
+  PROCESSOR_REVISION: '5e03',
+  ProgramData: 'C:\\ProgramData',
+  ProgramFiles: 'C:\\Program Files',
+  'ProgramFiles(x86)': 'C:\\Program Files (x86)',
+  ProgramW6432: 'C:\\Program Files',
+  PROS_TOOLCHAIN: 'C:\\Program Files\\PROS\\toolchain\\usr',
+  PSModulePath: 'C:\\Users\\modit\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules',
+  PUBLIC: 'C:\\Users\\Public',
+  SESSIONNAME: 'Console',
+  SystemDrive: 'C:',
+  SystemRoot: 'C:\\WINDOWS',
+  TEMP: 'C:\\Users\\modit\\AppData\\Local\\Temp',
+  TMP: 'C:\\Users\\modit\\AppData\\Local\\Temp',
+  USERDOMAIN: 'SKGHORI-WS',
+  USERDOMAIN_ROAMINGPROFILE: 'SKGHORI-WS',
+  USERNAME: 'modit',
+  USERPROFILE: 'C:\\Users\\modit',
+  VBOX_MSI_INSTALL_PATH: 'C:\\Program Files\\Oracle\\VirtualBox\\',
+  VS140COMNTOOLS: 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\',
+  windir: 'C:\\WINDOWS' }
+-----------------------
+pid: 11392
+-----------------------
+process title: Windows PowerShell
+-----------------------
+uptime (sec): 0.709
+-----------------------
+arch: x64
+-----------------------
+versions:
+{ http_parser: '2.7.0',
+  node: '8.7.0',
+  v8: '6.1.534.42',
+  uv: '1.15.0',
+  zlib: '1.2.11',
+  ares: '1.10.1-DEV',
+  modules: '57',
+  nghttp2: '1.25.0',
+  openssl: '1.0.2l',
+  icu: '59.1',
+  unicode: '9.0',
+  cldr: '31.0.1',
+  tz: '2017b' }
+-----------------------
+memory usage:
+{ rss: 51425280,
+  heapTotal: 36032512,
+  heapUsed: 19099536,
+  external: 440193 }
+-----------------------
+require.cache:
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\util\Util.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\package.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\node\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\node\FormData.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\node\mime.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\node\mimes.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\node\mimeOfBuffer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\node\transports\file.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\snekfetch\src\node\transports\ResponseStream.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\util\Constants.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\package.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\Client.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\util\Permissions.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\RESTManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\UserAgentManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\RESTMethods.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\long\dist\long.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\util\Collection.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\util\Snowflake.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\User.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Message.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\MessageMentions.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\MessageAttachment.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\MessageEmbed.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\RichEmbed.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Attachment.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\MessageReaction.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Emoji.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\ReactionEmoji.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\ReactionCollector.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\interfaces\Collector.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\MessageCollector.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Presence.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\GuildMember.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Role.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Invite.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\PartialGuild.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\PartialGuildChannel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Webhook.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\UserProfile.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\UserConnection.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\OAuth2Application.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Channel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\GroupDMChannel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\Guild.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\VoiceRegion.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\GuildAuditLogs.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\RequestHandlers\Sequential.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\RequestHandlers\RequestHandler.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\DiscordAPIError.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\RequestHandlers\Burst.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\rest\APIRequest.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\ClientDataManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\DMChannel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\TextChannel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\GuildChannel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\PermissionOverwrites.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\VoiceChannel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\ClientManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\WebSocketConnection.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\WebSocketPacketManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\WebSocket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ultron\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\PerMessageDeflate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\safe-buffer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\async-limiter\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\BufferUtil.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\EventTarget.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\Extensions.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\Constants.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\Receiver.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\Validation.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\ErrorCodes.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\Sender.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ws\lib\WebSocketServer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\ClientDataResolver.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\ClientVoiceManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\VoiceConnection.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\VoiceWebSocket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\util\SecretKey.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\VoiceUDPClient.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\player\AudioPlayer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\prism-media\src\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\prism-media\src\Prism.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\prism-media\src\transcoders\MediaTranscoder.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\prism-media\src\transcoders\ffmpeg\Ffmpeg.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\prism-media\src\transcoders\ffmpeg\FfmpegProcess.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\dispatcher\StreamDispatcher.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\util\VolumeInterface.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\VoiceBroadcast.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\opus\OpusEngineList.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\opus\NodeOpusEngine.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\opus\BaseOpusEngine.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\opus\OpusScriptEngine.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\util\Secretbox.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tweetnacl\nacl-fast.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\receiver\VoiceReceiver.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\voice\receiver\VoiceReadable.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\WebSocketManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\ActionsManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\sharding\ShardClientUtil.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\sharding\Shard.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\sharding\ShardingManager.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\WebhookClient.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\ClientUser.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\ClientUserSettings.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\ClientUserGuildSettings.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\structures\ClientUserChannelOverride.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\client.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\registry.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\base.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\argument.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\TemplateTag\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\TemplateTag\TemplateTag.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\helpers\taggedTemplateLiteral.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\core-js\object\define-properties.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\fn\object\define-properties.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\es6.object.define-properties.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_export.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_global.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_core.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_ctx.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_a-function.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_hide.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_object-dp.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_an-object.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_is-object.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_ie8-dom-define.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_descriptors.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_fails.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_to-primitive.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_property-desc.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_object-dps.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_object-keys.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_object-keys-internal.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_has.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_to-iobject.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_iobject.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_cof.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_defined.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_array-includes.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_to-length.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_to-integer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_to-absolute-index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_shared-key.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_shared.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_uid.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_enum-bug-keys.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\core-js\object\freeze.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\fn\object\freeze.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\es6.object.freeze.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_meta.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_object-sap.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\helpers\classCallCheck.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\helpers\createClass.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\core-js\object\define-property.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\fn\object\define-property.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\es6.object.define-property.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\trimResultTransformer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\trimResultTransformer\trimResultTransformer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\stripIndentTransformer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\stripIndentTransformer\stripIndentTransformer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\helpers\toConsumableArray.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\core-js\array\from.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\fn\array\from.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\es6.string.iterator.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_string-at.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_iter-define.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_library.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_redefine.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_iterators.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_iter-create.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_object-create.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_set-to-string-tag.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_wks.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_object-gpo.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_to-object.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\es6.array.from.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_iter-call.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_is-array-iter.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_create-property.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\core.get-iterator-method.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_classof.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\_iter-detect.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\replaceResultTransformer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\replaceResultTransformer\replaceResultTransformer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\replaceSubstitutionTransformer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\replaceSubstitutionTransformer\replaceSubstitutionTransformer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\inlineArrayTransformer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\inlineArrayTransformer\inlineArrayTransformer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\splitStringTransformer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\splitStringTransformer\splitStringTransformer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\removeNonPrintingValuesTransformer\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\removeNonPrintingValuesTransformer\removeNonPrintingValuesTransformer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\babel-runtime\core-js\number\is-nan.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\fn\number\is-nan.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-js\library\modules\es6.number.is-nan.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\commaLists\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\commaLists\commaLists.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\commaListsAnd\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\commaListsAnd\commaListsAnd.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\commaListsOr\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\commaListsOr\commaListsOr.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\html\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\html\html.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\codeBlock\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\source\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\safeHtml\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\safeHtml\safeHtml.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLine\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLine\oneLine.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineTrim\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineTrim\oneLineTrim.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineCommaLists\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineCommaLists\oneLineCommaLists.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineCommaListsOr\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineCommaListsOr\oneLineCommaListsOr.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineCommaListsAnd\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineCommaListsAnd\oneLineCommaListsAnd.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\inlineLists\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\inlineLists\inlineLists.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineInlineLists\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\oneLineInlineLists\oneLineInlineLists.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\stripIndent\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\stripIndent\stripIndent.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\stripIndents\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\common-tags\lib\stripIndents\stripIndents.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\group.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\message.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\errors\friendly.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\errors\command-format.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\base.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\dispatcher.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\escape-string-regexp\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\providers\helper.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\util.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\package.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\providers\base.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\extensions\guild.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\extend\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\cookies.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tough-cookie\lib\cookie.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tough-cookie\lib\pubsuffix.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tough-cookie\lib\store.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tough-cookie\lib\memstore.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tough-cookie\lib\permuteDomain.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tough-cookie\lib\pathMatch.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tough-cookie\package.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\helpers.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\json-stringify-safe\stringify.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\hawk\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\boom\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\hoek\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\hoek\lib\escape.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sntp\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\hawk\lib\server.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\cryptiles\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\cryptiles\node_modules\boom\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\hawk\lib\crypto.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\hawk\lib\utils.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\hawk\lib\client.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\aws-sign2\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\aws4\aws4.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\aws4\lru.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\http-signature\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\http-signature\lib\parser.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\assert-plus\assert.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\http-signature\lib\utils.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\key.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\algs.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\fingerprint.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\errors.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\certificate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\signature.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\utils.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\private-key.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\dhe.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\ed-compat.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\auto.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\pem.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asn1\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asn1\lib\ber\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asn1\lib\ber\errors.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asn1\lib\ber\types.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asn1\lib\ber\reader.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asn1\lib\ber\writer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\pkcs1.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\pkcs8.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\ssh-private.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\rfc4253.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\ssh-buffer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\ssh.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\identity.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\openssh-cert.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\x509.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sshpk\lib\formats\x509-pem.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\http-signature\lib\signer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\jsprim\lib\jsprim.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\extsprintf\lib\extsprintf.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\verror\lib\verror.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\core-util-is\lib\util.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\json-schema\lib\validate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\http-signature\lib\verify.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mime-types\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mime-db\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mime-db\db.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\stringstream\stringstream.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\caseless\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\forever-agent\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\form-data\lib\form_data.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\combined-stream\lib\combined_stream.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\delayed-stream\lib\delayed_stream.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\parallel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\lib\iterate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\lib\async.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\lib\defer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\lib\abort.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\lib\state.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\lib\terminator.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\serial.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\asynckit\serialOrdered.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\form-data\lib\populate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\isstream\isstream.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\is-typedarray\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\getProxyFromURI.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\querystring.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\qs\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\qs\lib\stringify.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\qs\lib\utils.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\qs\lib\formats.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\qs\lib\parse.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\har.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-validator\lib\promise.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\ajv.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\resolve.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\fast-deep-equal\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\util.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\ucs2length.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\schema_obj.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\json-schema-traverse\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\error_classes.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\fast-json-stable-stringify\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\validate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\co\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\cache.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\formats.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\rules.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\_rules.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\ref.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\allOf.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\anyOf.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\const.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\contains.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\dependencies.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\enum.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\format.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\items.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\_limit.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\_limitItems.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\_limitLength.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\_limitProperties.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\multipleOf.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\not.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\oneOf.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\pattern.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\properties.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\propertyNames.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\required.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\uniqueItems.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\$data.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\patternGroups.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\compile\async.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\keyword.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\ajv\lib\dotjs\custom.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-validator\lib\error.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\afterRequest.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\beforeRequest.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\browser.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\cache.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\content.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\cookie.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\creator.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\entry.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\har.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\header.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\log.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\page.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\pageTimings.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\postData.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\query.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\request.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\response.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\har-schema\lib\timings.json
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\auth.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\uuid\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\uuid\v1.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\uuid\lib\rng.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\uuid\lib\bytesToUuid.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\uuid\v4.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\oauth.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\oauth-sign\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\multipart.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\redirect.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\request\lib\tunnel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\tunnel-agent\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\performance-now\lib\performance-now.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\apiai.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\contexts_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\json_api_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\exceptions.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\get_contexts_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\delete_contexts_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\text_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\query_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\event_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\voice_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\apiai\module\user_entities_request.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\crashreporter\lib\crashreporter.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mkdirp\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\Connection.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\ConnectionConfig.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\constants\client.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\constants\charsets.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\Protocol.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\Parser.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\PacketHeader.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\bignumber.js\bignumber.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\BufferList.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\ChangeUser.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Sequence.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\AuthSwitchRequestPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\AuthSwitchResponsePacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ClientAuthenticationPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ComChangeUserPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ComPingPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ComQueryPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ComQuitPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ComStatisticsPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\EmptyPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\EofPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ErrorPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\Field.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\constants\types.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\FieldPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\HandshakeInitializationPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\LocalDataFilePacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\OkPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\OldPasswordPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\ResultSetHeaderPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\RowDataPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\SSLRequestPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\StatisticsPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\packets\UseOldPasswordPacket.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\constants\errors.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\Auth.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Handshake.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Ping.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Query.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\ResultSet.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\constants\server_status.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\readable.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\_stream_readable.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\process-nextick-args\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\isarray\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\internal\streams\stream.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\inherits\inherits.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\internal\streams\BufferList.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\internal\streams\destroy.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\_stream_writable.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\util-deprecate\node.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\_stream_duplex.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\_stream_transform.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\readable-stream\lib\_stream_passthrough.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Quit.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Statistics.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\PacketWriter.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\SqlString.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sqlstring\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\sqlstring\lib\SqlString.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\MessageCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\Action.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\MessageDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\MessageDeleteBulk.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\MessageUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\MessageReactionAdd.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\MessageReactionRemove.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\MessageReactionRemoveAll.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\ChannelCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\ChannelDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\ChannelUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildMemberGet.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildMemberRemove.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildBanRemove.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildRoleCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildRoleDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildRoleUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\UserGet.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\UserUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\UserNoteUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildSync.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildEmojiCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildEmojiDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildEmojiUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildEmojisUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildRolesPositionUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\actions\GuildChannelsPositionUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\string.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\integer.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\float.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\boolean.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\user.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\member.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\role.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\channel.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\types\message.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\util\help.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\util\prefix.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\util\ping.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\util\eval.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\commands\groups.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\commands\enable.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\commands\disable.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\commands\reload.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\commands\load.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js-commando\src\commands\commands\unload.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\require-all\index.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\commands\admin\deop.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\commands\admin\op.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\commands\admin\oplist.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\commands\general\guilds.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\commands\general\listservers.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\commands\general\say.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\Ready.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\AbstractHandler.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\Resumed.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildBanAdd.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildBanRemove.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildMemberAdd.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildMemberRemove.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildMemberUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildRoleCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildRoleDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildRoleUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildEmojisUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildMembersChunk.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\ChannelCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\ChannelDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\ChannelUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\ChannelPinsUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\PresenceUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\UserUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\UserNoteUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\UserSettingsUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\UserGuildSettingsUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\VoiceStateUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\TypingStart.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\MessageCreate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\MessageDelete.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\MessageUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\MessageDeleteBulk.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\VoiceServerUpdate.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildSync.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\RelationshipAdd.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\RelationshipRemove.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\MessageReactionAdd.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\MessageReactionRemove.js
+C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\MessageReactionRemoveAll.js
+-----------------------
+active handle:
+[ WriteStream {
+    connecting: false,
+    _hadError: false,
+    _handle: 
+     TTY {
+       bytesRead: 0,
+       _externalStream: [External],
+       fd: -1,
+       writeQueueSize: 0,
+       owner: [Circular],
+       onread: [Function: onread] },
+    _parent: null,
+    _host: null,
+    _readableState: 
+     ReadableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       buffer: [Object],
+       length: 0,
+       pipes: null,
+       pipesCount: 0,
+       flowing: null,
+       ended: false,
+       endEmitted: false,
+       reading: false,
+       sync: true,
+       needReadable: false,
+       emittedReadable: false,
+       readableListening: false,
+       resumeScheduled: false,
+       destroyed: false,
+       defaultEncoding: 'utf8',
+       awaitDrain: 0,
+       readingMore: false,
+       decoder: null,
+       encoding: null },
+    readable: false,
+    domain: null,
+    _events: 
+     { end: [Object],
+       finish: [Function: onSocketFinish],
+       _socketEnd: [Function: onSocketEnd] },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _writableState: 
+     WritableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       finalCalled: false,
+       needDrain: false,
+       ending: false,
+       ended: false,
+       finished: false,
+       destroyed: false,
+       decodeStrings: false,
+       defaultEncoding: 'utf8',
+       length: 0,
+       writing: false,
+       corked: 0,
+       sync: false,
+       bufferProcessing: false,
+       onwrite: [Function: bound onwrite],
+       writecb: null,
+       writelen: 0,
+       bufferedRequest: null,
+       lastBufferedRequest: null,
+       pendingcb: 0,
+       prefinished: false,
+       errorEmitted: false,
+       bufferedRequestCount: 0,
+       corkedRequestsFree: [Object] },
+    writable: true,
+    allowHalfOpen: false,
+    _bytesDispatched: 243,
+    _sockname: null,
+    _writev: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: null,
+    _server: null,
+    columns: 142,
+    rows: 52,
+    _type: 'tty',
+    fd: 1,
+    _isStdio: true,
+    destroySoon: [Function: destroy],
+    _destroy: [Function],
+    [Symbol(asyncId)]: 3,
+    [Symbol(bytesRead)]: 0 },
+  WriteStream {
+    connecting: false,
+    _hadError: false,
+    _handle: 
+     TTY {
+       bytesRead: 0,
+       _externalStream: [External],
+       fd: -1,
+       writeQueueSize: 0,
+       owner: [Circular],
+       onread: [Function: onread] },
+    _parent: null,
+    _host: null,
+    _readableState: 
+     ReadableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       buffer: [Object],
+       length: 0,
+       pipes: null,
+       pipesCount: 0,
+       flowing: null,
+       ended: false,
+       endEmitted: false,
+       reading: false,
+       sync: true,
+       needReadable: false,
+       emittedReadable: false,
+       readableListening: false,
+       resumeScheduled: false,
+       destroyed: false,
+       defaultEncoding: 'utf8',
+       awaitDrain: 0,
+       readingMore: false,
+       decoder: null,
+       encoding: null },
+    readable: false,
+    domain: null,
+    _events: 
+     { end: [Object],
+       finish: [Function: onSocketFinish],
+       _socketEnd: [Function: onSocketEnd] },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _writableState: 
+     WritableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       finalCalled: false,
+       needDrain: false,
+       ending: false,
+       ended: false,
+       finished: false,
+       destroyed: false,
+       decodeStrings: false,
+       defaultEncoding: 'utf8',
+       length: 0,
+       writing: false,
+       corked: 0,
+       sync: true,
+       bufferProcessing: false,
+       onwrite: [Function: bound onwrite],
+       writecb: null,
+       writelen: 0,
+       bufferedRequest: null,
+       lastBufferedRequest: null,
+       pendingcb: 0,
+       prefinished: false,
+       errorEmitted: false,
+       bufferedRequestCount: 0,
+       corkedRequestsFree: [Object] },
+    writable: true,
+    allowHalfOpen: false,
+    _bytesDispatched: 0,
+    _sockname: null,
+    _writev: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: null,
+    _server: null,
+    columns: 142,
+    rows: 52,
+    _type: 'tty',
+    fd: 2,
+    _isStdio: true,
+    destroySoon: [Function: destroy],
+    _destroy: [Function],
+    [Symbol(asyncId)]: 4,
+    [Symbol(bytesRead)]: 0 },
+  Socket {
+    connecting: false,
+    _hadError: false,
+    _handle: 
+     TCP {
+       bytesRead: 292,
+       _externalStream: [External],
+       fd: -1,
+       reading: true,
+       owner: [Circular],
+       onread: [Function: onread],
+       onconnection: null,
+       writeQueueSize: 0 },
+    _parent: null,
+    _host: null,
+    _readableState: 
+     ReadableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       buffer: [Object],
+       length: 0,
+       pipes: null,
+       pipesCount: 0,
+       flowing: true,
+       ended: false,
+       endEmitted: false,
+       reading: false,
+       sync: false,
+       needReadable: true,
+       emittedReadable: false,
+       readableListening: false,
+       resumeScheduled: false,
+       destroyed: false,
+       defaultEncoding: 'utf8',
+       awaitDrain: 0,
+       readingMore: false,
+       decoder: null,
+       encoding: null },
+    readable: true,
+    domain: null,
+    _events: 
+     { end: [Array],
+       finish: [Function: onSocketFinish],
+       _socketEnd: [Function: onSocketEnd],
+       data: [Function],
+       error: [Function: bound ],
+       connect: [Function: bound ] },
+    _eventsCount: 6,
+    _maxListeners: undefined,
+    _writableState: 
+     WritableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       finalCalled: false,
+       needDrain: false,
+       ending: false,
+       ended: false,
+       finished: false,
+       destroyed: false,
+       decodeStrings: false,
+       defaultEncoding: 'utf8',
+       length: 0,
+       writing: false,
+       corked: 0,
+       sync: false,
+       bufferProcessing: false,
+       onwrite: [Function: bound onwrite],
+       writecb: null,
+       writelen: 0,
+       bufferedRequest: null,
+       lastBufferedRequest: null,
+       pendingcb: 1,
+       prefinished: false,
+       errorEmitted: false,
+       bufferedRequestCount: 0,
+       corkedRequestsFree: [Object] },
+    writable: true,
+    allowHalfOpen: false,
+    _bytesDispatched: 251,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: null,
+    _server: null,
+    _idleTimeout: -1,
+    _idleNext: null,
+    _idlePrev: null,
+    _idleStart: 473,
+    _destroyed: false,
+    read: [Function],
+    _consuming: true,
+    [Symbol(asyncId)]: 10,
+    [Symbol(bytesRead)]: 0,
+    [Symbol(asyncId)]: 14,
+    [Symbol(triggerAsyncId)]: 1 },
+  TLSSocket {
+    _tlsOptions: 
+     { pipe: false,
+       secureContext: [Object],
+       isServer: false,
+       requestCert: true,
+       rejectUnauthorized: true,
+       session: undefined,
+       NPNProtocols: undefined,
+       ALPNProtocols: undefined,
+       requestOCSP: undefined },
+    _secureEstablished: true,
+    _securePending: false,
+    _newSessionPending: false,
+    _controlReleased: true,
+    _SNICallback: null,
+    servername: null,
+    npnProtocol: false,
+    alpnProtocol: false,
+    authorized: true,
+    authorizationError: null,
+    encrypted: true,
+    _events: 
+     { close: [Array],
+       end: [Array],
+       finish: [Function: onSocketFinish],
+       _socketEnd: [Function: onSocketEnd],
+       secure: [Function],
+       drain: [Function: ondrain],
+       error: [Object],
+       data: [Object] },
+    _eventsCount: 8,
+    connecting: false,
+    _hadError: false,
+    _handle: 
+     TLSWrap {
+       bytesRead: 14946,
+       _externalStream: [External],
+       fd: -1,
+       _parent: [Object],
+       _parentWrap: undefined,
+       _secureContext: [Object],
+       reading: true,
+       owner: [Circular],
+       onread: [Function: onread],
+       writeQueueSize: 1,
+       onhandshakestart: [Function],
+       onhandshakedone: [Function],
+       onocspresponse: [Function],
+       onerror: [Function] },
+    _parent: null,
+    _host: 'gateway.discord.gg',
+    _readableState: 
+     ReadableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       buffer: [Object],
+       length: 0,
+       pipes: null,
+       pipesCount: 0,
+       flowing: true,
+       ended: false,
+       endEmitted: false,
+       reading: true,
+       sync: false,
+       needReadable: true,
+       emittedReadable: false,
+       readableListening: false,
+       resumeScheduled: false,
+       destroyed: false,
+       defaultEncoding: 'utf8',
+       awaitDrain: 0,
+       readingMore: false,
+       decoder: null,
+       encoding: null },
+    readable: true,
+    domain: null,
+    _maxListeners: undefined,
+    _writableState: 
+     WritableState {
+       objectMode: false,
+       highWaterMark: 16384,
+       finalCalled: false,
+       needDrain: false,
+       ending: false,
+       ended: false,
+       finished: false,
+       destroyed: false,
+       decodeStrings: false,
+       defaultEncoding: 'utf8',
+       length: 0,
+       writing: false,
+       corked: 0,
+       sync: false,
+       bufferProcessing: false,
+       onwrite: [Function: bound onwrite],
+       writecb: null,
+       writelen: 0,
+       bufferedRequest: null,
+       lastBufferedRequest: null,
+       pendingcb: 0,
+       prefinished: false,
+       errorEmitted: false,
+       bufferedRequestCount: 0,
+       corkedRequestsFree: [Object] },
+    writable: true,
+    allowHalfOpen: false,
+    _bytesDispatched: 521,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: undefined,
+    _server: null,
+    ssl: 
+     TLSWrap {
+       bytesRead: 14946,
+       _externalStream: [External],
+       fd: -1,
+       _parent: [Object],
+       _parentWrap: undefined,
+       _secureContext: [Object],
+       reading: true,
+       owner: [Circular],
+       onread: [Function: onread],
+       writeQueueSize: 1,
+       onhandshakestart: [Function],
+       onhandshakedone: [Function],
+       onocspresponse: [Function],
+       onerror: [Function] },
+    _requestCert: true,
+    _rejectUnauthorized: true,
+    parser: null,
+    _httpMessage: 
+     ClientRequest {
+       domain: null,
+       _events: [Object],
+       _eventsCount: 3,
+       _maxListeners: undefined,
+       output: [],
+       outputEncodings: [],
+       outputCallbacks: [],
+       outputSize: 0,
+       writable: true,
+       _last: true,
+       upgrading: true,
+       chunkedEncoding: false,
+       shouldKeepAlive: true,
+       useChunkedEncodingByDefault: false,
+       sendDate: false,
+       _removedConnection: false,
+       _removedContLen: false,
+       _removedTE: false,
+       _contentLength: 0,
+       _hasBody: true,
+       _trailer: '',
+       finished: true,
+       _headerSent: true,
+       socket: [Circular],
+       connection: [Circular],
+       _header: 'GET /?v=6&encoding=json HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Key: +qiERyXtiR/RZJtoGArVrg==\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\nHost: gateway.discord.gg\r\n\r\n',
+       _onPendingData: [Function: noopPendingOutput],
+       agent: [Object],
+       socketPath: undefined,
+       timeout: undefined,
+       method: 'GET',
+       path: '/?v=6&encoding=json',
+       _ended: false,
+       res: [Object],
+       aborted: undefined,
+       timeoutCb: null,
+       upgradeOrConnect: true,
+       parser: null,
+       maxHeadersCount: null,
+       [Symbol(outHeadersKey)]: [Object] },
+    read: [Function],
+    _consuming: true,
+    _idleNext: null,
+    _idlePrev: null,
+    _idleTimeout: -1,
+    [Symbol(asyncId)]: 46,
+    [Symbol(bytesRead)]: 0 },
+  Timer {
+    '0': [Function: listOnTimeout],
+    _list: 
+     TimersList {
+       _idleNext: [Object],
+       _idlePrev: [Object],
+       _timer: [Circular],
+       _unrefed: false,
+       msecs: 120000,
+       nextTick: false } },
+  Timer {
+    '0': [Function: listOnTimeout],
+    _list: 
+     TimersList {
+       _idleNext: [Object],
+       _idlePrev: [Object],
+       _timer: [Circular],
+       _unrefed: false,
+       msecs: 41250,
+       nextTick: false } },
+  Timer {
+    '0': [Function: listOnTimeout],
+    _list: 
+     TimersList {
+       _idleNext: [Object],
+       _idlePrev: [Object],
+       _timer: [Circular],
+       _unrefed: false,
+       msecs: 60000,
+       nextTick: false } } ]
+-----------------------
+active request:
+[]
+-----------------------
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where serverId=335495391711854593' at line 1
+    at Query.Sequence._packetToError (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\mysql\lib\Connection.js:208:25)
+    at CommandoClient.client.on (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\index.js:108:19)
+    at emitNone (events.js:110:20)
+    at CommandoClient.emit (events.js:207:7)
+    at WebSocketConnection.triggerReady (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\WebSocketConnection.js:123:17)
+    at WebSocketConnection.checkIfReady (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\WebSocketConnection.js:139:61)
+    at GuildCreateHandler.handle (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\handlers\GuildCreate.js:13:31)
+    at WebSocketPacketManager.handle (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\packets\WebSocketPacketManager.js:103:65)
+    at WebSocketConnection.onPacket (C:\Users\modit\Documents\GitHub\studybot\studybot-testv1\node_modules\discord.js\src\client\websocket\WebSocketConnection.js:330:35)

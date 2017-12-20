@@ -85,9 +85,12 @@ client.registry
 	.registerCommandsIn(path.join(__dirname, 'commands'));
 //ready?
 client.on('ready', () => {
+	//login messages
 	console.log(`Logged in as ${client.user.tag}!`);
+	//server map
 	global.servers = (`Servers:\n${client.guilds.map(g => g.name).join("\n")}`);
 	console.log(`Servers:\n${client.guilds.map(g => g.name).join("\n")}`);
+	//update presense
 	let localUsers = client.users.array().length;
 	let updatePres = setInterval(function () {
 		let localUsers = client.users.array().length;
@@ -99,12 +102,23 @@ client.on('ready', () => {
 		});
 	}, 60000);
 	updatePres;
+	//update admins
+	let newGuilds = client.guilds.array();
+	for (let i = 0; i < newGuilds.length; i++) {
+		mysqlConnection.query(`select * from op where userId=${newGuilds[i].ownerID} and serverId=${newGuilds[i].id}`, function (error, results, fields) {
+			if (error) throw error;
+			if (!results[0]) { //if the owner is not an admin
+				mysqlConnection.query(`insert into op (userId, username, serverId) values (${newGuilds[i].ownerID}, '${newGuilds[i].owner.user.username}', ${newGuilds[i].id})`, function (error, results, fields) {
+					return console.log(`Succesfully added ${newGuilds[i].owner.user.username} from ${newGuilds[i].name} to the admin list!`);
+				});
+			}
+		});
+	}
 });
 
 client.on('guildCreate', (guild) => { //new guild setup
 	console.log(`joined guild ${guild.name}, initializing new guild setup`);
-	mysqlConnection.query(`INSERT INTO op (userId, username, serverId)
-VALUES ('${guild.ownerID}', '${guild.owner.displayName}', '${guild.id}');`, function (error, results, fields) {
+	mysqlConnection.query(`INSERT INTO op (userId, username, serverId) VALUES ('${guild.ownerID}', '${guild.owner.displayName}', '${guild.id}');`, function (error, results, fields) {
 		if (error) throw error;
 	});
 	let localUsers = client.users.array().length;
