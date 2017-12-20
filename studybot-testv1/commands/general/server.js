@@ -8,10 +8,10 @@ const {
 module.exports = class SayCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'guild',
+			name: 'server',
 			group: 'general',
-			memberName: 'guild',
-			description: 'Lists properties of the current guild.',
+			memberName: 'server',
+			description: 'Lists properties of the current server.',
 			examples: ['guild']
 		});
 	}
