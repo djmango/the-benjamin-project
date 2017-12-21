@@ -78,7 +78,8 @@ client.registry
 	.registerDefaultTypes()
 	.registerGroups([
 		['general', 'general commands'],
-		['admin', 'administration commands']
+		['admin', 'administration commands'],
+		['wiki', 'wiki commands']
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands()
