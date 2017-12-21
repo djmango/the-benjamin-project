@@ -18,11 +18,7 @@ module.exports = class SayCommand extends Command {
 		});
 	}
 	run(msg, args) {
-		let messagefull = "";
-		for (var i = 0; i < args.length; i++) {
-			messagefull = messagefull + args[i] + " "
-		}
-		let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${messagefull}&utf8=&format=json`
+		let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${args.text}&utf8=&format=json`
 		request({
 			url: url,
 			json: true
@@ -41,7 +37,7 @@ module.exports = class SayCommand extends Command {
 					embed
 				});
 			} else {
-				msg.reply(`The query \`${messagefull}\` returned no results.`);
+				msg.reply(`The query \`${args.text}\` returned no results.`);
 			}
 		})
 		return;
