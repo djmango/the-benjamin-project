@@ -18,10 +18,9 @@ module.exports = class SayCommand extends Command {
 		});
 	}
 	run(msg, args) {
-		let message = msg.content.split(" ");
 		let messagefull = "";
-		for (var i = 1; i < message.length; i++) {
-			messagefull = messagefull + message[i] + " "
+		for (var i = 0; i < args.length; i++) {
+			messagefull = messagefull + args[i] + " "
 		}
 		let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${messagefull}&utf8=&format=json`
 		request({

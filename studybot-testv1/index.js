@@ -7,7 +7,11 @@ global.fs = require('fs');
 global.request = require('request');
 global.ai = require('apiai');
 global.crashreporter = require('crashreporter');
-global.mysql = require('mysql'); //rekt nerd
+global.mysql = require('mysql');
+global.striptags = require('striptags');
+global.dateFormat = require('dateformat');
+global.prettyMs = require('pretty-ms');
+global.ud = require('urban-dictionary');
 global.startTime = process.hrtime();
 //pull keys file
 const keys = JSON.parse(fs.readFileSync('./keys/keys.json')); //read all keys
@@ -129,7 +133,6 @@ client.on('guildCreate', (guild) => { //new guild setup
 			type: 0
 		}
 	});
-
 });
 
 //handlers for errors and disconnects
