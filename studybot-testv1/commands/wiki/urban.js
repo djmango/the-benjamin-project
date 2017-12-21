@@ -18,14 +18,10 @@ module.exports = class SayCommand extends Command {
 		});
 	}
 	run(msg, args) {
-		let messagefull = "";
-		for (var i = 0; i < args.length; i++) {
-			messagefull = messagefull + args[i] + " "
-		}
-		ud.term(messagefull, function(error, entries, tags, sounds) {
+		ud.term(args.text, function(error, entries, tags, sounds) {
 			if (error) {
 				console.error(error.message)
-				msg.reply(`The query \`${messagefull}\` returned no results or returned an error.`);
+				msg.reply(`The query \`${args.text}\` returned no results or returned an error.`);
 			} else {
 				let embed = new Discord.RichEmbed()
 					.setTitle(`:pencil: ${entries[0].word}`)
