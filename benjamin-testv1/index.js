@@ -23,8 +23,8 @@ global.apiai = ai(keys.apiaitoken); //api.ai api key
 global.yt_api_key = keys.youtubetoken; //youtube api key
 global.botsudoid = keys.botsudo; //bot sudo id
 //debug setup
-if (keys.isdev == "true") global.prefix = "sb!!"
-else global.prefix = "sb!"
+if (keys.isdev == "true") global.prefix = "b!!"
+else global.prefix = "b!"
 //vars
 //prob nothing here for a while, everything is locally defined
 
@@ -101,7 +101,7 @@ client.on('ready', () => {
 		let localUsers = client.users.array().length;
 		client.user.setPresence({
 			game: {
-				name: `${prefix}help | ${localUsers} users | goo.gl/qoVTdx`,
+				name: `${prefix}help | ${localUsers} users | goo.gl/eHFDzv`,
 				type: 0
 			}
 		});
@@ -129,7 +129,7 @@ client.on('guildCreate', (guild) => { //new guild setup
 	let localUsers = client.users.array().length;
 	client.user.setPresence({
 		game: {
-			name: `${prefix}help | ${localUsers} users | goo.gl/qoVTdx`,
+			name: `${prefix}help | ${localUsers} users | goo.gl/eHFDzv`,
 			type: 0
 		}
 	});
