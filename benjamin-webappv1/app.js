@@ -5,6 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 const fs = require('fs');
+const fetch = require('node-fetch');
+const btoa = require('btoa');
+const session = require('express-session');
+const passport = require('passport');
+const OAuth2Strategy = require('passport-oauth2');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -33,11 +38,6 @@ app.use('/about', about);
 // app.use('/login', login);
 const keys = JSON.parse(fs.readFileSync('./keys/keys.json')); //read all keys
 
-var express = require('express'),
-  session = require('express-session'),
-  passport = require('passport'),
-  Strategy = require('passport-discord').Strategy,
-  router = express();
 
 passport.serializeUser(function (user, done) {
   done(null, user);
@@ -48,14 +48,18 @@ passport.deserializeUser(function (obj, done) {
 
 var scopes = ['identify', 'email', 'guilds', 'guilds.join'];
 
-passport.use(new Strategy({
+passport.use(new OAuth2Strategy({
+  authorizationURL: 'https://discordapp.com/api/oauth2/authorize',
+  tokenURL: 'https://discordapp.com/api/oauth2/token',
   clientID: keys.discordid,
   clientSecret: keys.discordtoken,
   callbackURL: 'http://localhost:3000/callback',
   scope: scopes
-}, function (accessToken, refreshToken, profile, done) {
-  process.nextTick(function () {
-    return done(null, profile);
+}, function (accessToken, refreshToken, profile, cb) {
+  User.findOrCreate({
+    exampleId: profile.id
+  }, function (err, user) {
+    return cb(err, user);
   });
 }));
 
@@ -66,7 +70,7 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.get('/login', passport.authenticate('discord', {
+app.get('/login', passport.authenticate('oauth2', {
   scope: scopes
 }), function (req, res) {});
 
@@ -75,15 +79,18 @@ app.get('/info', checkAuth, function (req, res) {
   res.json(req.user);
 });
 
-app.get('/callback', //TODO: figured out the console.log, investigate and pull key data, then make authentication request using passport
-  function (req, res) {console.log(req)},
-  passport.authenticate('discord', {
-    failureRedirect: '/'
-  }),
-  function (req, res) {
-    res.redirect('/about')
-  } // auth success
-);
+app.get('/callback',
+  async function (req, res) {
+    if (!req.query.code) throw new Error('NoCodeProvided');
+    console.log(req.query.code)
+    passport.authenticate('oauth2', {
+        failureRedirect: '/login'
+      }),
+      function (req, res) {
+        // Successful authentication, redirect home.
+        res.redirect('/');
+      } // auth success
+  });
 app.get('/logout', function (req, res) {
   req.logout();
   res.redirect('/');
