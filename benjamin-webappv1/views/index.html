@@ -10,34 +10,53 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-</head>
+    <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #43800e;
+      color: #3a393e;
+      padding: 1% 0;
+      font-size: 1.2em;
+      border: 0;
+      opacity: 100%;
+    }
+    .navbar-brand {
+      float: right;
+      min-height: 55px;
+      padding: 0 20px 20px;
+    }
 
-<body>
-    <div>
-        <div>
-            <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="/">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about">About us</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <br/>
-        <div class="jumbotron">
-            <p>
-                This is place to put content. You can put slider, short description about your website and place some links for navigation.
-            </p>
-        </div>
-    </div>
-</body>
+    img {
+      border-radius: 50%; /*rounds image*/
+    }
 
-</html>
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar"> <!-- navigation button on mobile -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/benjamin.png" alt="Benjamin Logo" width="100" height="100">  <!-- benjamin logo -->
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar right">
+            <li class="active"><a href="#">Home</a></li> <!-- labels on navigation bar -->
+            <li><a href="#">Commands & Info</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Benjamins</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </body>
+  </html>
