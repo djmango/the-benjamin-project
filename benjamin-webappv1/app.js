@@ -10,6 +10,7 @@ const btoa = require('btoa');
 const session = require('express-session');
 const passport = require('passport');
 const OAuth2Strategy = require('passport-oauth2');
+const DiscordStrategy = require('passport-discord').Strategy;
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -36,6 +37,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/about', about);
 // app.use('/login', login);
+
 const keys = JSON.parse(fs.readFileSync('./keys/keys.json')); //read all keys
 
 
@@ -47,13 +49,14 @@ passport.deserializeUser(function (obj, done) {
 });
 
 var scopes = ['identify', 'email', 'guilds', 'guilds.join'];
+var callbackURL = 'http://localhost:3000/callback'
 
-passport.use(new OAuth2Strategy({
+passport.use(new DiscordStrategy({
   authorizationURL: 'https://discordapp.com/api/oauth2/authorize',
   tokenURL: 'https://discordapp.com/api/oauth2/token',
   clientID: keys.discordid,
   clientSecret: keys.discordtoken,
-  callbackURL: 'http://localhost:3000/callback',
+  callbackURL: callbackURL,
   scope: scopes
 }, function (accessToken, refreshToken, profile, cb) {
   User.findOrCreate({
@@ -64,13 +67,20 @@ passport.use(new OAuth2Strategy({
 }));
 
 app.use(session({
-  secret: keys.discordtoken,
+  secret: 'keyboard cat',
   resave: false,
   saveUninitialized: false
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.get('/login', passport.authenticate('oauth2', {
+
+//error handling
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
+
+app.get('/login', passport.authenticate('discord', {
   scope: scopes
 }), function (req, res) {});
 
@@ -78,19 +88,60 @@ app.get('/info', checkAuth, function (req, res) {
   console.log(req.user)
   res.json(req.user);
 });
-
+/*
 app.get('/callback',
-  async function (req, res) {
+  async function (req, res, err) {
     if (!req.query.code) throw new Error('NoCodeProvided');
-    console.log(req.query.code)
-    passport.authenticate('oauth2', {
-        failureRedirect: '/login'
-      }),
-      function (req, res) {
-        // Successful authentication, redirect home.
-        res.redirect('/');
-      } // auth success
+    passport.authorize('discord', {
+        scope: scopes,
+        successRedirect: '/info',
+        failureRedirect: '/',
+        failureFlash: true
+      })
   });
+*/
+/*
+app.get('/callback', async function (req, res) {
+  if (!req.query.code) throw new Error('NoCodeProvided');
+  const code = req.query.code;
+  const creds = btoa(`${keys.discordid}:${keys.discordtoken}`);
+  console.log(`https://discordapp.com/api/oauth2/token?grant_type=authorization_code&code=${code}&client_id=${keys.discordid}&client_secret=${keys.discordtoken}&redirect_uri=${callbackURL}`)
+  const response = await fetch(`https://discordapp.com/api/oauth2/token?grant_type=authorization_code&code=${code}&client_id=${keys.discordid}&client_secret=${keys.discordtoken}&redirect_uri=${callbackURL}`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${code}`,
+    },
+  });
+  const json = await response.json();
+  console.log(json)
+  res.redirect(`/?token=${code}`);
+});
+*/
+
+app.get('/callback', async function (req, res) {
+  if (!req.query.code) throw new Error('NoCodeProvided');
+  const code = req.query.code;
+  const creds = btoa(`${keys.discordid}:${keys.discordtoken}`);
+  let API_ENDPOINT = "https://discordapp.com/api/v6"
+  var data = {
+    "client_id": keys.discordid,
+    "client_secret": keys.discordtoken,
+    "grant_type": "authorization_code",
+    "code": code,
+    "redirect_url": callbackURL
+  }
+  var headers = [
+    ["Content-Type", "application/x-www-form-urlencoded"]
+  ]
+  const response = await fetch(`${API_ENDPOINT}/oauth2/token?grant_type=authorization_code&&code=${code}`, {
+    method: 'POST',
+    headers: ["Content-Type", "application/x-www-form-urlencoded"]
+  });
+  const json = await response.json();
+  console.log(json)
+  res.redirect(`/?token=${code}`);
+});
+
 app.get('/logout', function (req, res) {
   req.logout();
   res.redirect('/');
