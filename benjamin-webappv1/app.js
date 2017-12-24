@@ -11,6 +11,8 @@ const session = require('express-session');
 const passport = require('passport');
 const OAuth2Strategy = require('passport-oauth2');
 const DiscordStrategy = require('passport-discord').Strategy;
+const axios = require('axios')
+const querystring = require('querystring')
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -118,6 +120,7 @@ app.get('/callback', async function (req, res) {
 });
 */
 
+/*
 app.get('/callback', async function (req, res) {
   if (!req.query.code) throw new Error('NoCodeProvided');
   const code = req.query.code;
@@ -133,12 +136,37 @@ app.get('/callback', async function (req, res) {
   var headers = [
     ["Content-Type", "application/x-www-form-urlencoded"]
   ]
-  const response = await fetch(`${API_ENDPOINT}/oauth2/token?grant_type=authorization_code&&code=${code}`, {
+  const response = await fetch(`${API_ENDPOINT}/oauth2/token?grant_type=authorization_code&code=${code}`, {
     method: 'POST',
     headers: ["Content-Type", "application/x-www-form-urlencoded"]
   });
   const json = await response.json();
   console.log(json)
+  res.redirect(`/?token=${code}`);
+});
+*/
+
+app.get('/callback', async function (req, res) {
+  if (!req.query.code) throw new Error('NoCodeProvided');
+  const code = req.query.code;
+  var data = {
+    "client_id": keys.discordid,
+    "client_secret": keys.discordtoken,
+    "grant_type": "authorization_code",
+    "code": code,
+    "redirect_url": "http://localhost:3000/"
+  }
+  var headers = [
+    ["Content-Type", "application/x-www-form-urlencoded"]
+  ]
+  axios.post(`https://discordapp.com/api/oauth2/token`, querystring.stringify(data), {
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      }
+    })
+    .then(function (response) {
+      console.log(response.data)
+    })
   res.redirect(`/?token=${code}`);
 });
 
