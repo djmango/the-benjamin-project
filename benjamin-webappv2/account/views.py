@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpRequest
 from requests_oauthlib import OAuth2Session
 import os
+import requests
 
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
@@ -47,5 +48,8 @@ def callback(request):
         TOKEN_URL,
         client_secret=CLIENT_SECRET,
         code=(request.GET.get('code')))
-    print(token)
+    r = requests.get('http://discordapp.com/api/users/@me',
+                     headers={"Authorization": "Bearer %s" % token['access_token']})
+    userInfo = r.json()
+    print(userInfo['username'])
     return HttpResponse("congrats, you did it! now, if you are me, do the TODO stuff")
