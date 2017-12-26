@@ -8,4 +8,4 @@ class account(models.Model):
     discriminator = models.IntegerField() #4 digit number
     avatar = models.CharField(max_length=100) #identifier of image
     token = models.CharField(max_length=50) #updates every login
-    guilds = models.CharField() #encoded in json
+    guilds = models.CharField(max_length=500) #encoded in json
