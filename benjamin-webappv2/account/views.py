@@ -52,7 +52,15 @@ def callback(request):
     r = requests.get('http://discordapp.com/api/users/@me',
                      headers={"Authorization": "Bearer %s" % token['access_token']})
     userInfo = r.json()
-    print(userInfo['username'])
-    mysql.query("""INSERT INTO account_account (username, discriminator, avatar, token, guilds) VALUES ('%s', %s, '%s', '%s', '%s')""" % (userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'nullfornow'))
+    mysql.query("""SELECT * FROM account_account WHERE userId='%s'""" % userInfo['id'])
+    r2 = mysql.store_result()
+    if not all(r2.fetch_row(maxrows=0)) == True:
+        print(r2.fetch_row(maxrows=0))
+    else:
+        print("SELECT * FROM account_account WHERE userId='%s'" %
+              userInfo['id'])
+        print(r2.fetch_row(maxrows=0))
+        print('its empty b')
+    mysql.query("""INSERT INTO account_account (userId, username, discriminator, avatar, token, guilds) VALUES (%s, '%s', %s, '%s', '%s', '%s')""" % (userInfo['id'], userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'nullfornow'))
     mysql.commit()
-    return HttpResponse("congrats, you did it! now, if you are me, do the TODO stuff")
+    return HttpResponse("congrats, you did it! now, if you are me, do the TODO stuff") 
