@@ -85,3 +85,4 @@ $RECYCLE.BIN/
 *.lnk
 .vscode
 __pycache__
+*.pyc
