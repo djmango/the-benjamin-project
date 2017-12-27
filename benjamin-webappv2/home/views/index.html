@@ -25,22 +25,21 @@
       padding: 0;
       background-color: #8CD28C;
       overflow-x: hidden;
+      min-height:75px;
+      line-height:75px;
     }
     .navbar {
-      margin-bottom: 0;
+      margin: 0;
       border-radius: 0;
       background-color: #8CD28C; /*bg color for tabs on navbar*/
       color: #606060; /*text color for tabs on navbar*/
-      padding: 1% 0;
+      padding: 50px 0px 50px 0px;
       font-size: 2em;
       font-family:Panton;
-      margin-left: 25%;
-      margin-right:20%;
-      margin-top: 30px;
       border: 0;
       animation-duration: 1.5s;
     }
-    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
       color: #606060; /*text color for active*/
       background-color: #8CD28C; /*bg color for active*/
       font-weight: bold;
@@ -48,21 +47,22 @@
 
     }
     .selected {
-      text-decoration-line:underline;
+     text-decoration-line:underline;
 
 
     }
     .navbar .navbar-brand img {
-      border-radius: 50%; /*rounds image*/
-      margin-top: -40px;
+      border-radius: 360%; /*rounds image*/
+      margin-top: -55px;
+      margin-right: 10px;
 
     }
 
-    .navbar-inverse .navbar-nav li a {
+    .navbar-default .navbar-nav li a {
       color: #606060; /*non active colors*/
       font-weight: bold;
     }
-    .navbar-inverse .navbar-nav li a:hover {
+    .navbar-default .navbar-nav li a:hover {
       color: #606060; /*color of text being hovered over*/
       background-color: inherit;
       text-decoration: underline;
@@ -83,6 +83,7 @@
       padding: 0;
     }
 
+
   </style>
 </head>
 
@@ -90,9 +91,9 @@
 
 
   <body>
-    <nav class="navbar navbar-inverse fadeInDown animated">
+    <nav class="navbar navbar-default fadeInDown animated navbar-static-top">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header navbar-left">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- navigation button on mobile -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -100,8 +101,8 @@
           </button>
           <a class="navbar-brand" href="https://goo.gl/eHFDzv"><img src="https://imgur.com/k8SlOAa.png" allign="middle" width="125" height="125"></a> <!-- benjamin logo  alt="Benjamin Logo"-->
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-left ">
+        <div class="collapse navbar-collapse navbar-left" id="myNavbar">
+          <ul class="nav navbar-nav">
             <li class="active selected"><a href="/">Home</a></li> <!-- labels on navigation bar -->
             <li><a href="/commands">Commands & Info</a></li>
             <li><a href="/about">About</a></li>
