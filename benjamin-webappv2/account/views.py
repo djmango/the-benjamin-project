@@ -14,9 +14,9 @@ REDIRECT_URI = 'http://localhost:8000/account/callback'
 TOKEN_URL = 'https://discordapp.com/api/oauth2/token'
 API_BASE_URL = 'https://discordapp.com/api'
 AUTHORIZATION_BASE_URL = 'https://discordapp.com/api/oauth2/authorize'
-mysql = MySQLdb.Connection(host='35.196.94.58', user='root',
+mysql = MySQLdb.connect(host='35.196.94.58', user='root',
                            passwd='uEgwrOugbAG0Nbb1', port=3306, db='testv1')
-
+mysqlcon = mysql.cursor()
 def token_updater(token):
     os.environ['oauth2_token'] = token
 
@@ -54,13 +54,15 @@ def callback(request):
     userInfo = r.json()
     mysql.query("""SELECT * FROM account_account WHERE userId='%s'""" % userInfo['id'])
     r2 = mysql.store_result()
-    if not all(r2.fetch_row(maxrows=0)) == True:
-        print(r2.fetch_row(maxrows=0))
+    r2dict = r2.fetch_row(how=1)
+    print(r2dict)
+    if not r2dict: # if user has already registered
+        print('dontoook')
+        mysql.query("""UPDATE account_account SET username = '%s', discriminator = '%s', avatar = '%s', token = '%s', guilds = '%s' WHERE userId='%s'""" % (
+            userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'maybeitsunull', userInfo['id']))
+        mysql.commit()
     else:
-        print("SELECT * FROM account_account WHERE userId='%s'" %
-              userInfo['id'])
-        print(r2.fetch_row(maxrows=0))
-        print('its empty b')
-    mysql.query("""INSERT INTO account_account (userId, username, discriminator, avatar, token, guilds) VALUES (%s, '%s', %s, '%s', '%s', '%s')""" % (userInfo['id'], userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'nullfornow'))
-    mysql.commit()
+        print('lookatme')
+        mysql.query("""INSERT INTO account_account (userId, username, discriminator, avatar, token, guilds) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')""" % (userInfo['id'], userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'nullfornow'))
+        mysql.commit()
     return HttpResponse("congrats, you did it! now, if you are me, do the TODO stuff") 
