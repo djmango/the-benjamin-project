@@ -24,6 +24,7 @@
       margin: 0;
       padding: 0;
       background-color: #8CD28C;
+      overflow-x: hidden;
     }
     .navbar {
       margin-bottom: 0;
@@ -37,6 +38,7 @@
       margin-right:20%;
       margin-top: 30px;
       border: 0;
+      animation-duration: 1.5s;
     }
     .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
       color: #606060; /*text color for active*/
@@ -45,9 +47,8 @@
 
 
     }
-    .underlined_text {
-      border-bottom: solid 2px #606060;
-      display: inline;
+    .selected {
+      text-decoration-line:underline;
 
 
     }
@@ -58,15 +59,35 @@
     }
 
     .navbar-inverse .navbar-nav li a {
-      color: #606060;
+      color: #606060; /*non active colors*/
       font-weight: bold;
     }
+    .navbar-inverse .navbar-nav li a:hover {
+      color: #606060; /*color of text being hovered over*/
+      background-color: inherit;
+      text-decoration: underline;
+    }
+       margin-top: 3%;
+       padding-left: 20%;
+       padding-right: 20%;
+       animation-duration: 2s;
+        }
+    .row hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 2px solid #606060;
+      border-radius: 100%;
+      margin: 1em 0;
+      padding: 0;
+    }
+
   </style>
 </head>
 
 
-    </style>
-  </head>
+
+
   <body>
     <nav class="navbar navbar-inverse fadeInDown animated">
       <div class="container-fluid">
@@ -79,18 +100,27 @@
           <a class="navbar-brand" href="https://goo.gl/eHFDzv"><img src="https://imgur.com/k8SlOAa.png" allign="middle" width="125" height="125"></a> <!-- benjamin logo  alt="Benjamin Logo"-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="active underlined_text"><a href="index.html">Home</a></li> <!-- labels on navigation bar -->
-            <li><a href="/home/views/commands.html">Commands & Info</a></li>
-            <li><a href="/home/views/about.html">About</a></li>
+          <ul class="nav navbar-nav navbar-left ">
+            <li class="active selected"><a href="/">Home</a></li> <!-- labels on navigation bar -->
+            <li><a href="/commands">Commands & Info</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="/home/views/benjamins.html">Benjamins</a></li>
             <li><a href="/account/login">Login</a></li>
           </ul>
         </div>
       </div>
-    </div>
+
   </nav>
+  <script type="text/javascript" src="/static/assets/script.js"></script>
+
+  <page class="main">
+
+  <div class="row fadeIn animated"><hr></div>
+
+  </page>
+
+
+
 
 </body>
-
 </html>
