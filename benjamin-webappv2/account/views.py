@@ -52,17 +52,13 @@ def callback(request):
     r = requests.get('http://discordapp.com/api/users/@me',
                      headers={"Authorization": "Bearer %s" % token['access_token']})
     userInfo = r.json()
-    mysql.query("""SELECT * FROM account_account WHERE userId='%s'""" % userInfo['id'])
-    r2 = mysql.store_result()
-    r2dict = r2.fetch_row(how=1)
-    print(r2dict)
-    if not r2dict: # if user has already registered
-        print('dontoook')
-        mysql.query("""UPDATE account_account SET username = '%s', discriminator = '%s', avatar = '%s', token = '%s', guilds = '%s' WHERE userId='%s'""" % (
-            userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'maybeitsunull', userInfo['id']))
-        mysql.commit()
+    mysqlcon.execute("""SELECT * FROM account_account WHERE userId='%s'""" % userInfo['id'])
+    r2 = mysqlcon.fetchone()
+    if r2 is not None: # if user has already registered
+        mysqlcon.execute("""UPDATE account_account SET username = '%s', discriminator = '%s', avatar = '%s', token = '%s', guilds = '%s' WHERE userId='%s'"""
+        % (userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'maybeitsunull', userInfo['id']))
     else:
-        print('lookatme')
-        mysql.query("""INSERT INTO account_account (userId, username, discriminator, avatar, token, guilds) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')""" % (userInfo['id'], userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'nullfornow'))
-        mysql.commit()
+        mysqlcon.execute("""INSERT INTO account_account (userId, username, discriminator, avatar, token, guilds) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')"""
+        % (userInfo['id'], userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'nullfornow'))
+    mysql.commit()
     return HttpResponse("congrats, you did it! now, if you are me, do the TODO stuff") 
