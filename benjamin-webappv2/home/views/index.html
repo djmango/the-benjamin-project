@@ -17,8 +17,16 @@
     <style>
 
     @font-face {
-      font-family: Panton;
+      font-family: Panton-LightCaps;
       src:url("/static/assets/font/Panton-LightCaps.otf");
+    }
+    @font-face {
+      font-family: MaxwellSmCaps-Bold;
+      src:url("static/assets/font/Kimmy Design - MaxwellSmCaps-Bold.otf");
+    }
+    @font-face {
+      font-family: MaxwellSans-Light;
+      src:url("static/assets/font/Kimmy Design - MaxwellSans-Light.otf");
     }
     body {
       margin: 0;
@@ -34,10 +42,11 @@
       background-color: #8CD28C; /*bg color for tabs on navbar*/
       color: #606060; /*text color for tabs on navbar*/
       padding: 50px 0px 50px 0px;
-      font-size: 2em;
-      font-family:Panton;
+      font-size: 1.5em;
+      font-family:Panton-LightCaps;
       border: 0;
       animation-duration: 1.5s;
+      padding-right: 20%;
     }
     .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
       color: #606060; /*text color for active*/
@@ -51,10 +60,12 @@
 
 
     }
+    .navbar-brand {
+      padding-left: 20%;
+    }
     .navbar .navbar-brand img {
-      border-radius: 360%; /*rounds image*/
       margin-top: -55px;
-      margin-right: 10px;
+      margin-left: 100px;
 
     }
 
@@ -82,6 +93,12 @@
       margin: 1em 0;
       padding: 0;
     }
+    .logo-boldtext {
+      font-family: MaxwellSmCaps-Bold;
+    }
+    .logo-lighttext {
+      font-family: MaxwellSans-Light;
+    }
 
 
   </style>
@@ -99,9 +116,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://goo.gl/eHFDzv"><img src="https://imgur.com/k8SlOAa.png" allign="middle" width="125" height="125"></a> <!-- benjamin logo  alt="Benjamin Logo"-->
+          <a class="navbar-brand" href="https://goo.gl/eHFDzv"><img src="/static/assets/img/benjaminlogoNBG.png" width="640" height="180"></a> <!-- benjamin logo  alt="Benjamin Logo"-->
         </div>
-        <div class="collapse navbar-collapse navbar-left" id="myNavbar">
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active selected"><a href="/">Home</a></li> <!-- labels on navigation bar -->
             <li><a href="/commands">Commands & Info</a></li>
