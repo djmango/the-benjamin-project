@@ -50,7 +50,7 @@ ROOT_URLCONF = 'benjamin_webappv2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR + '/home/views/'],
+        'DIRS': [BASE_DIR + '/home/views/',  BASE_DIR + '/account/views/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
