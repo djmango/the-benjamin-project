@@ -6,6 +6,8 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 """
 
 import os
+import json
+keys = json.loads(open('keys.json').read())
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -50,7 +52,7 @@ ROOT_URLCONF = 'benjamin_webappv2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR + '/home/views/'],
+        'DIRS': [BASE_DIR + '/home/views/',  BASE_DIR + '/account/views/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,8 +76,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'testv1',
         'USER': 'root',
-        'PASSWORD': 'uEgwrOugbAG0Nbb1',
-        'HOST': '35.196.94.58',
+        'PASSWORD': keys['mysqlpasswd'],
+        'HOST': keys['mysqlip'],
         'PORT': '3306',
     }
 }

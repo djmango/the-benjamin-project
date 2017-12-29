@@ -110,6 +110,15 @@ client.on('ready', () => {
 	//update admins
 	let newGuilds = client.guilds.array();
 	for (let i = 0; i < newGuilds.length; i++) {
+		mysqlConnection.query(`select * from account_guilds where guildId=${newGuilds[i].id}`, function (error, results, fields) {
+			if (error) throw error;
+			if (!results[0]) { //if the server isnt listed, list it
+				mysqlConnection.query(`insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`, function (error, results, fields) {
+					if (error) throw error;
+					return console.log(`Succesfully added ${newGuilds[i].name} to the guilds list!`);
+				})
+			}
+		});
 		mysqlConnection.query(`select * from op where userId=${newGuilds[i].ownerID} and serverId=${newGuilds[i].id}`, function (error, results, fields) {
 			if (error) throw error;
 			if (!results[0]) { //if the owner is not an admin
@@ -123,7 +132,10 @@ client.on('ready', () => {
 
 client.on('guildCreate', (guild) => { //new guild setup
 	console.log(`joined guild ${guild.name}, initializing new guild setup`);
-	mysqlConnection.query(`INSERT INTO op (userId, username, serverId) VALUES ('${guild.ownerID}', '${guild.owner.displayName}', '${guild.id}');`, function (error, results, fields) {
+	mysqlConnection.query(`insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`, function (error, results, fields) {				if (error) throw error;
+		if (error) throw error;
+	});
+	mysqlConnection.query(`insert into op (userId, username, serverId) values ('${guild.ownerID}', '${guild.owner.displayName}', '${guild.id}');`, function (error, results, fields) {
 		if (error) throw error;
 	});
 	let localUsers = client.users.array().length;

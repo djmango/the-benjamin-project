@@ -17,70 +17,110 @@
     <style>
 
     @font-face {
-      font-family: Panton;
+      font-family: Panton-LightCaps;
       src:url("/static/assets/font/Panton-LightCaps.otf");
+    }
+    @font-face {
+      font-family: MaxwellSmCaps-Bold;
+      src:url("static/assets/font/Kimmy Design - MaxwellSmCaps-Bold.otf");
+    }
+    @font-face {
+      font-family: MaxwellSans-Light;
+      src:url("static/assets/font/Kimmy Design - MaxwellSans-Light.otf");
     }
     body {
       margin: 0;
       padding: 0;
       background-color: #8CD28C;
+      overflow-x: hidden;
+      min-height:75px;
+      line-height:75px;
     }
     .navbar {
-      margin-bottom: 0;
+      margin: 0;
       border-radius: 0;
       background-color: #8CD28C; /*bg color for tabs on navbar*/
       color: #606060; /*text color for tabs on navbar*/
-      padding: 1% 0;
-      font-size: 2em;
-      font-family:Panton;
-      margin-left: 25%;
-      margin-right:20%;
-      margin-top: 30px;
+      padding: 50px 0px 50px 0px;
+      font-size: 1.5em;
+      font-family:Panton-LightCaps;
       border: 0;
+      animation-duration: 1.5s;
+      padding-right: 20%;
     }
-    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
       color: #606060; /*text color for active*/
       background-color: #8CD28C; /*bg color for active*/
       font-weight: bold;
 
 
     }
-    .underlined_text {
-      border-bottom: solid 2px #606060;
-      display: inline;
+    .selected {
+     text-decoration-line:underline;
 
 
+    }
+    .navbar-brand {
+      padding-left: 20%;
     }
     .navbar .navbar-brand img {
-      border-radius: 50%; /*rounds image*/
-      margin-top: -40px;
+      margin-top: -55px;
+      margin-left: 100px;
 
     }
 
-    .navbar-inverse .navbar-nav li a {
-      color: #606060;
+    .navbar-default .navbar-nav li a {
+      color: #606060; /*non active colors*/
       font-weight: bold;
     }
+    .navbar-default .navbar-nav li a:hover {
+      color: #606060; /*color of text being hovered over*/
+      background-color: inherit;
+      text-decoration: underline;
+    }
+    .row {
+       margin-top: 3%;
+       padding-left: 20%;
+       padding-right: 20%;
+       animation-duration: 2s;
+        }
+    .row hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 2px solid #606060;
+      border-radius: 100%;
+      margin: 1em 0;
+      padding: 0;
+    }
+    .logo-boldtext {
+      font-family: MaxwellSmCaps-Bold;
+    }
+    .logo-lighttext {
+      font-family: MaxwellSans-Light;
+    }
+
+
   </style>
 </head>
 
 
-    </style>
-  </head>
+
+
   <body>
-    <nav class="navbar navbar-inverse fadeInDown animated">
+    <nav class="navbar navbar-default fadeInDown animated navbar-static-top">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header navbar-left">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- navigation button on mobile -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://goo.gl/eHFDzv"><img src="https://imgur.com/k8SlOAa.png" allign="middle" width="125" height="125"></a> <!-- benjamin logo  alt="Benjamin Logo"-->
+          <a class="navbar-brand" href="https://goo.gl/eHFDzv"><img src="/static/assets/img/benjaminlogoNBG.png" width="640" height="180"></a> <!-- benjamin logo  alt="Benjamin Logo"-->
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="active underlined_text"><a href="/">Home</a></li> <!-- labels on navigation bar -->
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active selected"><a href="/">Home</a></li> <!-- labels on navigation bar -->
             <li><a href="/commands">Commands & Info</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/home/views/benjamins.html">Benjamins</a></li>
@@ -88,9 +128,19 @@
           </ul>
         </div>
       </div>
-    </div>
+
   </nav>
+  <script type="text/javascript" src="/static/assets/script.js"></script>
+  <iframe src="https://discordapp.com/widget?id=394045294670774272&theme=dark" width="350" height="500" allowtransparency="true"
+    frameborder="0"></iframe>
+  <page class="main">
+
+  <div class="row fadeIn animated"><hr></div>
+
+  </page>
+
+
+
 
 </body>
-
 </html>
