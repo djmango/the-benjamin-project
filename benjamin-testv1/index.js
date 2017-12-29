@@ -113,9 +113,9 @@ client.on('ready', () => {
 		mysqlConnection.query(`select * from account_guilds where guildId=${newGuilds[i].id}`, function (error, results, fields) {
 			if (error) throw error;
 			if (!results[0]) { //if the server isnt listed, list it
-				mysqlConnection.query(`insert into account_guilds (guildId, icon, settings) values ('${newGuilds[i].id}', '${newGuilds[i].iconURL}', '{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }' )`, function (error, results, fields) {
+				mysqlConnection.query(`insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`, function (error, results, fields) {
 					if (error) throw error;
-					return;
+					return console.log(`Succesfully added ${newGuilds[i].name} to the guilds list`);
 				})
 			}
 		});
