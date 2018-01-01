@@ -3,8 +3,8 @@ import os
 import json
 import requests
 import MySQLdb
+import bleach
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from requests_oauthlib import OAuth2Session
 
 # import keys
@@ -18,7 +18,7 @@ REDIRECT_URI = 'http://localhost:8000/account/callback'
 TOKEN_URL = 'https://discordapp.com/api/oauth2/token'
 API_BASE_URL = 'https://discordapp.com/api'
 AUTHORIZATION_BASE_URL = 'https://discordapp.com/api/oauth2/authorize'
-mysql = MySQLdb.connect(host=keys['mysqlip'], user='root', passwd=keys['mysqlpasswd'], port=3306, db='testv1')
+mysql = MySQLdb.connect(host=keys['mysqlip'], user='root', passwd=keys['mysqlpasswd'], port=3306, db='testv1', charset='utf8')
 mysqlcon = mysql.cursor()
 
 def token_updater(token):
@@ -40,7 +40,10 @@ def make_session(token=None, state=None, scope=None):
 
 # views
 def index(request):
-    return render(request, 'account_index.html', {'userId' : request.session['userId'], 'avatar' : request.session['avatar']})
+    sharedGuildsIcons = []
+    for i in range(len(request.session['guilds'])):
+        sharedGuildsIcons.append((request.session['guilds'])[i]['iconUrl'])
+    return render(request, 'account_index.html', {'userId' : request.session['userId'], 'avatar' : request.session['avatar'], 'guildIcons' : sharedGuildsIcons})
     # return HttpResponse("Hello, world. Welcome to account index.")
 
 def login(request):
@@ -64,12 +67,12 @@ def callback(request):
     r = requests.get('http://discordapp.com/api/users/@me/guilds', headers={"Authorization": "Bearer %s" % token['access_token']})
     userGuilds = r.json()
     sharedGuilds = []
-    for i in userGuilds:
-        s = ("SELECT * FROM account_guilds WHERE guildId=%s")
-        mysqlcon.execute(s , i['id'])
+    for i in range(len(userGuilds)):
+        mysqlcon.execute("""SELECT * FROM account_guilds WHERE guildId=%s""" % userGuilds[i]['id'])
         r = mysqlcon.fetchone()
         if r is not None:
-            sharedGuilds.append(r)
+            userGuilds[i]['iconUrl'] = r[2]
+            sharedGuilds.append(userGuilds[i])
 
     # update data
     mysqlcon.execute("""SELECT * FROM account_account WHERE userId='%s'""" % userInfo['id'])
