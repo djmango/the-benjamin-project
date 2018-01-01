@@ -51,23 +51,37 @@ def login(request):
     return redirect(authorization_url)
 
 def callback(request):
+    # pull data
     discord = make_session(state=os.environ['oauth2_state'])
     token = discord.fetch_token(
         TOKEN_URL,
         client_secret=CLIENT_SECRET,
         code=(request.GET.get('code')))
-    r = requests.get('http://discordapp.com/api/users/@me',
-                     headers={"Authorization": "Bearer %s" % token['access_token']})
+    r = requests.get('http://discordapp.com/api/users/@me', headers={"Authorization": "Bearer %s" % token['access_token']})
     userInfo = r.json()
+
+    # find shared guilds
+    r = requests.get('http://discordapp.com/api/users/@me/guilds', headers={"Authorization": "Bearer %s" % token['access_token']})
+    userGuilds = r.json()
+    sharedGuilds = []
+    for i in userGuilds:
+        s = ("SELECT * FROM account_guilds WHERE guildId=%s")
+        mysqlcon.execute(s , i['id'])
+        r = mysqlcon.fetchone()
+        if r is not None:
+            sharedGuilds.append(r)
+
+    # update data
     mysqlcon.execute("""SELECT * FROM account_account WHERE userId='%s'""" % userInfo['id'])
-    r2 = mysqlcon.fetchone()
-    sharedGuilds = "nunxd" # i will fill this in later when i tell charlie to do it
-    if r2 is not None: # if user has already registered, update the data
-        mysqlcon.execute("""UPDATE account_account SET username = '%s', discriminator = '%s', avatar = '%s', token = '%s', guilds = '%s' WHERE userId='%s'"""
-        % (userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'maybeitsunull', userInfo['id']))
+    r = mysqlcon.fetchone()
+    if r is not None: # if user has already registered, update the data
+        s = ("UPDATE account_account SET username = %s, discriminator = %s, avatar = %s, token = %s, guilds = %r WHERE userId=%s")
+        mysqlcon.execute(s, (userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], sharedGuilds, userInfo['id']))
     else: # if user has not, add the data
-        mysqlcon.execute("""INSERT INTO account_account (userId, username, discriminator, avatar, token, guilds) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')"""
-        % (userInfo['id'], userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], 'nullfornow'))
+        s = ("INSERT INTO account_account (userId, username, discriminator, avatar, token, guilds) VALUES (%s, %s, %s, %s, %s, %s)")
+        mysqlcon.execute(s, (userInfo['id'], userInfo['username'], userInfo['discriminator'], userInfo['avatar'], token['access_token'], sharedGuilds))
+
+    # store data
     request.session['userId'] = userInfo['id']  # set 'id' in the session
     request.session['access_token'] = token['access_token']
     request.session['avatar'] = userInfo['avatar']
