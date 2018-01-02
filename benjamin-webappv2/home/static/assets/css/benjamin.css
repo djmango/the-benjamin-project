@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: Panton-LightCaps;
+  src:url("static/assets/font/Panton-LightCaps.otf");
+}
+@font-face {
+  font-family: MaxwellSmCaps-Bold;
+  src:url("static/font/Kimmy Design - MaxwellSmCaps-Bold.otf");
+}
+@font-face {
+  font-family: MaxwellSans-Light;
+  src:url("/static/assets/font/Kimmy Design - MaxwellSans-Light.otf");
+}
+body {
+  background-color: #8CD28C;
+  overflow-x: hidden;
+  min-height:75px;
+  line-height:75px;
+  margin: 5% 2% 2% 2%;
+}
+.navbar {
+  border-radius: 0;
+  background-color: #8CD28C; /*bg color for tabs on navbar*/
+  color: #606060; /*text color for tabs on navbar*/
+  font-size: 3em;
+  font-family:MaxwellSans-Light;
+  border: 0;
+  animation-duration: 1.5s;
+  margin: 5% 5% 5% 5%;
+}
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
+  color: #000; /*text color for active*/
+  font-weight: bold;
+  background: none;
+}
+.selected {
+ text-decoration-line:underline;
+ text-decoration-color: #000;
+}
+.navbar-brand {
+  margin: -15% 5% 5% 5%;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #000; /*non active colors*/
+  font-weight: bold;
+
+}
+.navbar-default .navbar-nav li a:hover {
+  color: #000; /*color of text being hovered over*/
+  background-color: inherit;
+  text-decoration: underline;
+  animation: bounce 1s linear;
+}
+.row {
+   animation-duration: 2s;
+    }
+.row hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #606060;
+  border-radius: 100%;
+}
+.logo-boldtext {
+  font-family: MaxwellSmCaps-Bold;
+}
+.logo-lighttext {
+  font-family: MaxwellSans-Light;
+}
