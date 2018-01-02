@@ -52,6 +52,7 @@ body {
   color: #000; /*color of text being hovered over*/
   background-color: inherit;
   text-decoration: underline;
+  animation: bounce 1s linear;
 }
 .row {
    animation-duration: 2s;

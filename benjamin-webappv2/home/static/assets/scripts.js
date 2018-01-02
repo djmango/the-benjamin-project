@@ -11,3 +11,8 @@ function animationHover(element, animation){
             }, 2000);
         });
 }
+$(document).ready(function(){
+    $('#navbar-default .navbar-nav li a').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
