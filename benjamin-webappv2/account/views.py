@@ -3,13 +3,13 @@ import os
 import json
 import requests
 import MySQLdb
-import bleach
 from django.shortcuts import render, redirect
 from requests_oauthlib import OAuth2Session
 
 # import keys
 keys = json.loads(open('keys.json').read())
 
+# oauth setup
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 API_ENDPOINT = 'https://discordapp.com/api/v6'
 CLIENT_ID = keys['discordid']
@@ -18,11 +18,13 @@ REDIRECT_URI = 'http://localhost:8000/account/callback'
 TOKEN_URL = 'https://discordapp.com/api/oauth2/token'
 API_BASE_URL = 'https://discordapp.com/api'
 AUTHORIZATION_BASE_URL = 'https://discordapp.com/api/oauth2/authorize'
+
+# mysql setup
 mysql = MySQLdb.connect(host=keys['mysqlip'], user='root', passwd=keys['mysqlpasswd'], port=3306, db='testv1', charset='utf8')
 mysqlcon = mysql.cursor()
 
 def token_updater(token):
-    os.environ['oauth2_token'] = token
+    request.session['oauth2_token'] = token
 
 def make_session(token=None, state=None, scope=None):
     return OAuth2Session(
@@ -44,18 +46,17 @@ def index(request):
     for i in range(len(request.session['guilds'])):
         sharedGuildsIcons.append((request.session['guilds'])[i]['iconUrl'])
     return render(request, 'account_index.html', {'userId' : request.session['userId'], 'avatar' : request.session['avatar'], 'guildIcons' : sharedGuildsIcons})
-    # return HttpResponse("Hello, world. Welcome to account index.")
 
 def login(request):
     scope = ['identify guilds']
     discord = make_session(scope=scope)
     authorization_url, state = discord.authorization_url(AUTHORIZATION_BASE_URL)
-    os.environ['oauth2_state'] = state
+    request.session['oauth2_state'] = state
     return redirect(authorization_url)
 
 def callback(request):
     # pull data
-    discord = make_session(state=os.environ['oauth2_state'])
+    discord = make_session(state=request.session['oauth2_state'])
     token = discord.fetch_token(
         TOKEN_URL,
         client_secret=CLIENT_SECRET,

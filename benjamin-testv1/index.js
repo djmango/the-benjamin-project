@@ -1,6 +1,6 @@
 //apis
 console.log("getting apis...");
-global.Commando = require('discord.js-commando'); //butts
+global.Commando = require('discord.js-commando');
 global.Discord = require('discord.js');
 global.path = require('path');
 global.fs = require('fs');
@@ -12,7 +12,7 @@ global.striptags = require('striptags');
 global.dateFormat = require('dateformat');
 global.prettyMs = require('pretty-ms');
 global.ud = require('urban-dictionary');
-global.startTime = process.hrtime();
+
 //pull keys file
 const keys = JSON.parse(fs.readFileSync('./keys/keys.json')); //read all keys
 //keys
@@ -22,11 +22,13 @@ else global.token = keys.discordtoken; //discord api key
 global.apiai = ai(keys.apiaitoken); //api.ai api key
 global.yt_api_key = keys.youtubetoken; //youtube api key
 global.botsudoid = keys.botsudo; //bot sudo id
+
 //debug setup
 if (keys.isdev == "true") global.prefix = "b!!"
 else global.prefix = "b!"
+
 //vars
-//prob nothing here for a while, everything is locally defined
+global.startTime = process.hrtime();
 
 //functions
 console.log("initializing functions...");
@@ -55,7 +57,7 @@ function handleDisconnect() {
 		}
 	});
 
-	mysqlConnection.on('error', function (err) {
+	mysqlConnection.on('error', (err) => {
 		console.log('db error', err);
 		if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL server is usually
 			handleDisconnect(); // lost due to either server restart, or a
@@ -132,7 +134,7 @@ client.on('ready', () => {
 
 client.on('guildCreate', (guild) => { //new guild setup
 	console.log(`joined guild ${guild.name}, initializing new guild setup`);
-	mysqlConnection.query(`insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`, function (error, results, fields) {				if (error) throw error;
+	mysqlConnection.query(`insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`, function (error, results, fields) {
 		if (error) throw error;
 	});
 	mysqlConnection.query(`insert into op (userId, username, serverId) values ('${guild.ownerID}', '${guild.owner.displayName}', '${guild.id}');`, function (error, results, fields) {
@@ -148,7 +150,7 @@ client.on('guildCreate', (guild) => { //new guild setup
 });
 
 //handlers for errors and disconnects
-client.on('disconnect', function (event) {
+client.on('disconnect', (event) => {
 	if (event.code != 1000) {
 		console.log("Discord client disconnected with reason: " + event.reason + " (" + event.code + "). Attempting to reconnect in 6s...");
 		setTimeout(function () {
@@ -157,7 +159,7 @@ client.on('disconnect', function (event) {
 	}
 });
 
-client.on('error', function (err) {
+client.on('error', (err) => {
 	console.log("Discord client error '" + err.code + "'. Attempting to reconnect in 6s...");
 	client.destroy();
 	setTimeout(function () {
@@ -174,7 +176,7 @@ process.on('rejectionHandled', (err) => {
 	}, 2000);
 });
 
-process.on('exit', function () {
+process.on('exit', () => {
 	mysqlConnection.end();
 	client.destroy();
 });
