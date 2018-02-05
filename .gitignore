@@ -86,3 +86,5 @@ $RECYCLE.BIN/
 .vscode
 __pycache__
 *.pyc
+keys.json
+benjamin-webappv2/keys.json
