@@ -14,7 +14,7 @@ global.prettyMs = require('pretty-ms');
 global.ud = require('urban-dictionary');
 
 // pull keys file
-const keys = JSON.parse(fs.readFileSync('./keys/keys.json'));  // read all keys
+const keys = JSON.parse(fs.readFileSync('./keys/realkeys.json'));  // read all keys
 // keys
 console.log('pulling keys...');
 if (keys.isdev == 'true')
