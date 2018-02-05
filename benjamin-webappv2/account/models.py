@@ -8,10 +8,10 @@ class account(models.Model):
     discriminator = models.CharField(max_length=4) # 4 digits
     avatar = models.CharField(max_length=100) # identifier of image
     token = models.CharField(max_length=50) # updates every login
-    guilds = models.CharField(max_length=500) # encoded in json
-    settings = models.CharField(max_length=500) # all user settings in a dict
+    guilds = models.CharField(max_length=5000) # encoded in json
+    settings = models.CharField(max_length=5000) # all user settings in a dict
 
 class guilds(models.Model):
     guildId = models.CharField(max_length=30) # a unique id
     icon = models.CharField(max_length=100) # url to icon image
-    settings = models.CharField(max_length=500) # all guild settings in a dict
+    settings = models.CharField(max_length=5000) # all guild settings in a dict
