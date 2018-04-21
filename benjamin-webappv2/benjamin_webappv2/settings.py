@@ -82,8 +82,6 @@ DATABASES = {
     }
 }
 
-# mysql = MySQLdb.Connection(host='35.196.94.58', user='root', passwd='uEgwrOugbAG0Nbb1', port=3306, db='testv1')
-
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 

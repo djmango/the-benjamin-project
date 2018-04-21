@@ -10,28 +10,27 @@ global.crashreporter = require('crashreporter');
 global.mysql = require('mysql');
 global.striptags = require('striptags');
 global.dateFormat = require('dateformat');
-global.prettyMs = require('pretty-ms');
 global.ud = require('urban-dictionary');
 
 // pull keys file
-const keys = JSON.parse(fs.readFileSync('./keys/realkeys.json'));  // read all keys
+const keys = JSON.parse(fs.readFileSync('./keys/realkeys.json')); // read all keys
 // keys
 console.log('pulling keys...');
 if (keys.isdev == 'true')
-  global.token = keys.testdiscordtoken;  // test discord api key
+  global.token = keys.testdiscordtoken; // test discord api key
 else
-  global.token = keys.discordtoken;     // discord api key
-global.apiai = ai(keys.apiaitoken);     // api.ai api key
-global.yt_api_key = keys.youtubetoken;  // youtube api key
-global.botsudoid = keys.botsudo;        // bot sudo id
+global.token = keys.discordtoken; // discord api key
+global.apiai = ai(keys.apiaitoken); // api.ai api key
+global.yt_api_key = keys.youtubetoken; // youtube api key
+global.botsudoid = keys.botsudo; // bot sudo id
 
 // debug setup
 if (keys.isdev == 'true')
   global.prefix = 'b!!'
-  else global.prefix = 'b!'
+else global.prefix = 'b!'
 
-  // vars
-  global.startTime = process.hrtime();
+// vars
+global.startTime = process.hrtime();
 
 // functions
 console.log('initializing functions...');
@@ -42,23 +41,23 @@ console.log('connecting to mysql server..');
 let db_config = ({
   host: keys.mysqlip,
   user: 'root',
-  password: keys.mysql,
+  password: keys.mysqlpasswd,
   database: 'testv1'
 });
 
 function handleDisconnect() {
-  const keys = JSON.parse(fs.readFileSync('./keys/keys.json'));  // read all
-                                                                 // keys
+  const keys = JSON.parse(fs.readFileSync('./keys/realkeys.json')); // read all
+  // keys
   global.mysqlConnection =
-      mysql.createConnection(db_config);   // Recreate the connection, since the
-                                           // old one cannot be reused.
-  mysqlConnection.connect(function(err) {  // The server is either down
-    if (err) {  // or restarting (takes a while sometimes).
+  mysql.createConnection(db_config); // Recreate the connection, since the
+  // old one cannot be reused.
+  mysqlConnection.connect(function (err) { // The server is either down
+    if (err) { // or restarting (takes a while sometimes).
       console.log('error when connecting to db:', err);
       setTimeout(
-          handleDisconnect,
-          2000);  // We introduce a delay before attempting to reconnect,
-    }             // to avoid a hot loop, and to allow our node script to
+        handleDisconnect,
+        2000); // We introduce a delay before attempting to reconnect,
+    } // to avoid a hot loop, and to allow our node script to
     // process asynchronous requests in the meantime.
     else {
       console.log('successfully connected to mysql server!');
@@ -67,11 +66,11 @@ function handleDisconnect() {
 
   mysqlConnection.on('error', (err) => {
     console.log('db error', err);
-    if (err.code === 'PROTOCOL_CONNECTION_LOST') {  // Connection to the MySQL
-                                                    // server is usually
-      handleDisconnect();  // lost due to either server restart, or a
-    } else {               // connnection idle timeout (the wait_timeout
-      throw err;           // server variable configures this)
+    if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL
+      // server is usually
+      handleDisconnect(); // lost due to either server restart, or a
+    } else { // connnection idle timeout (the wait_timeout
+      throw err; // server variable configures this)
     }
   });
 }
@@ -90,15 +89,16 @@ global.client = new Commando.Client({
 global.discordClient = new Discord.Client();
 // command groups
 client.registry.registerDefaultTypes()
-    .registerGroups([
-      ['general', 'general commands'], ['admin', 'administration commands'],
-      ['wiki', 'wiki commands']
-    ])
-    .registerDefaultGroups()
-    .registerDefaultCommands()
-    .registerCommandsIn(path.join(__dirname, 'commands'));
+  .registerGroups([
+    ['general', 'general commands'],
+    ['admin', 'administration commands'],
+    ['wiki', 'wiki commands']
+  ])
+  .registerDefaultGroups()
+  .registerDefaultCommands()
+  .registerCommandsIn(path.join(__dirname, 'commands'));
 // ready?
-client.on('ready', async() => {
+client.on('ready', async () => {
   // login messages
   console.log(`Logged in as ${client.user.tag}!`);
   // server map
@@ -106,7 +106,7 @@ client.on('ready', async() => {
   console.log(`Servers:\n${client.guilds.map(g => g.name).join("\n")}`);
   // update presense
   let localUsers = client.users.array().length;
-  let updatePres = setInterval(function() {
+  let updatePres = setInterval(function () {
     let localUsers = client.users.array().length;
     client.user.setPresence({
       game: {
@@ -120,47 +120,47 @@ client.on('ready', async() => {
   let newGuilds = await client.guilds.array();
   for (let i = 0; i < newGuilds.length; i++) {
     mysqlConnection.query(
-        `select * from account_guilds where guildId=${newGuilds[i].id}`,
-        function(error, results, fields) {
-          if (error) throw error;
-          if (!results[0]) {  // if the server isnt listed, list it
-            mysqlConnection.query(
-                `insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`,
-                function(error, results, fields) {
-                  if (error) throw error;
-                  return console.log(
-                      `Succesfully added ${newGuilds[i].name} to the guilds list!`);
-                })
-          }
-        });
+      `select * from account_guilds where guildId=${newGuilds[i].id}`,
+      function (error, results, fields) {
+        if (error) throw error;
+        if (!results[0]) { // if the server isnt listed, list it
+          mysqlConnection.query(
+            `insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`,
+            function (error, results, fields) {
+              if (error) throw error;
+              return console.log(
+                `Succesfully added ${newGuilds[i].name} to the guilds list!`);
+            })
+        }
+      });
     mysqlConnection.query(
-        `select * from op where userId=${newGuilds[i].ownerID} and serverId=${newGuilds[i].id}`,
-        function(error, results, fields) {
-          if (error) throw error;
-          if (!results[0]) {  // if the owner is not an admin
-            mysqlConnection.query(
-                `insert into op (userId, username, serverId) values (${newGuilds[i].ownerID}, '${newGuilds[i].owner.user.username}', ${newGuilds[i].id})`,
-                function(error, results, fields) {
-                  return console.log(
-                      `Succesfully added ${newGuilds[i].owner.user.username} from ${newGuilds[i].name} to the admin list!`);
-                });
-          }
-        });
+      `select * from op where userId=${newGuilds[i].ownerID} and serverId=${newGuilds[i].id}`,
+      function (error, results, fields) {
+        if (error) throw error;
+        if (!results[0]) { // if the owner is not an admin
+          mysqlConnection.query(
+            `insert into op (userId, username, serverId) values (${newGuilds[i].ownerID}, '${newGuilds[i].owner.user.username}', ${newGuilds[i].id})`,
+            function (error, results, fields) {
+              return console.log(
+                `Succesfully added ${newGuilds[i].owner.user.username} from ${newGuilds[i].name} to the admin list!`);
+            });
+        }
+      });
   }
 });
 
-client.on('guildCreate', (guild) => {  // new guild setup
+client.on('guildCreate', (guild) => { // new guild setup
   console.log(`joined guild ${guild.name}, initializing new guild setup`);
   mysqlConnection.query(
-      `insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`,
-      function(error, results, fields) {
-        if (error) throw error;
-      });
+    `insert into account_guilds (guildId, icon, settings) values ("${newGuilds[i].id}", "${newGuilds[i].iconURL}", "{ 'ownerId' : '${newGuilds[i].ownerID}', 'adminRoles' : '[]' }" )`,
+    function (error, results, fields) {
+      if (error) throw error;
+    });
   mysqlConnection.query(
-      `insert into op (userId, username, serverId) values ('${guild.ownerID}', '${guild.owner.displayName}', '${guild.id}');`,
-      function(error, results, fields) {
-        if (error) throw error;
-      });
+    `insert into op (userId, username, serverId) values ('${guild.ownerID}', '${guild.owner.displayName}', '${guild.id}');`,
+    function (error, results, fields) {
+      if (error) throw error;
+    });
   let localUsers = client.users.array().length;
   client.user.setPresence({
     game: {
@@ -174,25 +174,31 @@ client.on('guildCreate', (guild) => {  // new guild setup
 client.on('disconnect', (event) => {
   if (event.code != 1000) {
     console.log(
-        'Discord client disconnected with reason: ' + event.reason + ' (' +
-        event.code + '). Attempting to reconnect in 6s...');
-    setTimeout(function() { client.login(token); }, 6000);
+      'Discord client disconnected with reason: ' + event.reason + ' (' +
+      event.code + '). Attempting to reconnect in 6s...');
+    setTimeout(function () {
+      client.login(token);
+    }, 6000);
   }
 });
 
 client.on('error', (err) => {
   console.log(
-      'Discord client error \'' + err.code +
-      '\'. Attempting to reconnect in 6s...');
+    'Discord client error \'' + err.code +
+    '\'. Attempting to reconnect in 6s...');
   client.destroy();
-  setTimeout(function() { client.login(token); }, 6000);
+  setTimeout(function () {
+    client.login(token);
+  }, 6000);
 });
 
 process.on('rejectionHandled', (err) => {
   console.log(err);
   console.log('an error occurred. reconnecting...');
   client.destroy();
-  setTimeout(function() { client.login(token); }, 2000);
+  setTimeout(function () {
+    client.login(token);
+  }, 2000);
 });
 
 process.on('exit', () => {
