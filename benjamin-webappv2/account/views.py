@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 from requests_oauthlib import OAuth2Session
 
 # import keys
-keys = json.loads(open('keys.json').read())
+keys = json.loads(open('realkeys.json').read())
 
 # oauth setup
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
@@ -23,7 +23,7 @@ AUTHORIZATION_BASE_URL = 'https://discordapp.com/api/oauth2/authorize'
 mysql = MySQLdb.connect(host=keys['mysqlip'], user='root', passwd=keys['mysqlpasswd'], port=3306, db='testv1', charset='utf8')
 mysqlcon = mysql.cursor()
 
-def token_updater(token):
+def token_updater(token, request):
     request.session['oauth2_token'] = token
 
 def make_session(token=None, state=None, scope=None):
@@ -42,9 +42,11 @@ def make_session(token=None, state=None, scope=None):
 
 # views
 def index(request):
+     # this list will contain the icons of all the guilds both the user and bot is in
     sharedGuildsIcons = []
     for i in range(len(request.session['guilds'])):
         sharedGuildsIcons.append((request.session['guilds'])[i]['iconUrl'])
+    # send the user info to the template and render
     return render(request, 'account_index.html', {'userId' : request.session['userId'], 'avatar' : request.session['avatar'], 'guildIcons' : sharedGuildsIcons})
 
 def login(request):
